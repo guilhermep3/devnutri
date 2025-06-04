@@ -13,7 +13,7 @@ export const Hero = () => {
           <Button className={buttonStyle + ' rounded-tl-4xl rounded-br-4xl px-8 py-6 text-lg font-semibold'}>Comprar</Button>
         </div>
         <div className="sm:flex-1 flex flex-col justify-center items-center">
-          <HeroImage/>
+          <HeroImage />
         </div>
       </div>
     </section>
