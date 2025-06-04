@@ -1,0 +1,98 @@
+[
+   {
+      "id": 1,
+      "name": "Salada com torrada",
+      "image": "lunchbox-1.png",
+      "ingredients": [
+         "Torrada",
+         "Ovo",
+         "Tomate",
+         "Milho",
+         "Repolho",
+         "Alface",
+         "Azeitona"
+      ],
+      "type": "Vegano",
+      "price": 18.90
+   },
+   {
+      "id": 2,
+      "name": "Arroz com salmão",
+      "image": "lunchbox-2.png",
+      "ingredients": [
+         "Arroz",
+         "Salmão",
+         "Queijo fit",
+         "Tomate",
+         "Pimentão",
+         "Picles",
+         "Azeitona",
+         "Semente de girassol"
+      ],
+      "type": "Carnivoro",
+      "price": 29.90
+   },
+   {
+      "id": 3,
+      "name": "Macarrão Fit",
+      "image": "lunchbox-3.png",
+      "ingredients": [
+         "Macarrão sem glúten",
+         "Grão de bico",
+         "Carne Moída",
+         "Milho",
+         "Ervilha",
+         "Abóbora",
+         "Azeitona",
+         "Alface",
+         "Molho de tomate"
+      ],
+      "type": "Carnivoro",
+      "price": 24.50
+   },
+   {
+      "id": 4,
+      "name": "Peixe e brócolis",
+      "image": "lunchbox-4.png",
+      "ingredients": [
+         "Peixe",
+         "Brócolis",
+         "Molho branco",
+         "Tomate",
+         "Cebola"
+      ],
+      "type": "Carnivoro",
+      "price": 27.90
+   },
+   {
+      "id": 5,
+      "name": "Salada verde",
+      "image": "lunchbox-5.png",
+      "ingredients": [
+         "Alface",
+         "Rúcula",
+         "Brócolis",
+         "Tomate",
+         "Cebola",
+         "Pimentão",
+         "Pepino",
+         "Queijo fit"
+      ],
+      "type": "Vegano",
+      "price": 19.90
+   },
+   {
+      "id": 6,
+      "name": "Salada com Frango",
+      "image": "lunchbox-6.png",
+      "ingredients": [
+         "Frango",
+         "Alface",
+         "Rúcula",
+         "Limão",
+         "Queijo fit"
+      ],
+      "type": "Vegano",
+      "price": 22.90
+   }
+]
