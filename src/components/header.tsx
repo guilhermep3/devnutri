@@ -1,5 +1,6 @@
 "use client"
-import { House, Phone, ShoppingCart } from "lucide-react"
+import { linksData } from "@/utlis/linksData";
+import Link from "next/link";
 import { usePathname } from "next/navigation"
 
 export const Header = () => {
@@ -12,16 +13,38 @@ export const Header = () => {
       <div className="text-[var(--secondary-color)] text-lg md:text-xl font-bold sourGummy">
         DevNutri
       </div>
-      <nav className="flex items-center gap-4">
-        <div className={`p-2 rounded-full cursor-pointer hover:bg-zinc-200`}>
+      <nav>
+        <ul className="flex items-center gap-4">
+          {linksData.map((link) => {
+            const Icon = link.icon;
+            return (
+              <li key={link.id}>
+                <Link href={link.href} className="p-2 rounded-full hover:bg-zinc-200 inline-block">
+                  <Icon className={`size-5 md:size-6 ${isActive(link.href)
+                        ? 'stroke-[var(--secondary-color)]'
+                        : 'text-black'
+                      }`}
+                  />
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        {/* <Link href={``}
+          className={`p-2 rounded-full cursor-pointer hover:bg-zinc-200`}
+        >
           <House className={`${isActive('/') ? 'stroke-[var(--secondary-color)]' : 'text-black'} size-5 md:size-6`} />
-        </div>
-        <div className={`p-2 rounded-full cursor-pointer hover:bg-zinc-200`}>
+        </Link>
+        <Link href={``}
+          className={`p-2 rounded-full cursor-pointer hover:bg-zinc-200`}
+        >
           <ShoppingCart className={`${isActive('/marmitas') ? 'stroke-[var(--secondary-color)]' : 'text-black'} size-5 md:size-6`} />
-        </div>
-        <div className={`p-2 rounded-full cursor-pointer hover:bg-zinc-200`}>
+        </Link>
+        <Link href={``}
+          className={`p-2 rounded-full cursor-pointer hover:bg-zinc-200`}
+        >
           <Phone className={`${isActive('/mutricionistas') ? 'stroke-[var(--secondary-color)]' : 'text-black'} size-5 md:size-6`} />
-        </div>
+        </Link> */}
       </nav>
     </header>
   )

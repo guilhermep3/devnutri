@@ -33,7 +33,7 @@ export const LunchboxSection = () => {
             <LunchboxItem key={item.id} item={item} />
           ))}
         </div>
-        <Button className={buttonStyle+' rounded-tl-4xl rounded-br-4xl px-8 py-6 text-lg font-semibold mx-auto'}>
+        <Button className={buttonStyle+' mx-auto'}>
           Comprar
         </Button>
       </div>

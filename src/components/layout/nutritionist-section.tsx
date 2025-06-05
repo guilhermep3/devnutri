@@ -1,5 +1,6 @@
-import { containerStyle, sectionDescStyle, sectionTitleStyle } from "@/utlis/styles"
+import { buttonStyle, containerStyle, sectionDescStyle, sectionTitleStyle } from "@/utlis/styles"
 import { NutritionistSlide } from "./slide-nutritionist"
+import { Button } from "../ui/button"
 
 export const NutritionistSection = () => {
 
@@ -13,6 +14,7 @@ export const NutritionistSection = () => {
         <div className="flex w-full">
           <NutritionistSlide/>
         </div>
+        <Button className={buttonStyle}>Agendar Consulta</Button>
       </div>
     </section>
   )
