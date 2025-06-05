@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Nicole Gonçalves",
+    "role": "Nutrticionista Líder",
+    "image": "nutritionist-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Mariana Andrade",
+    "role": "Nutrticionista Líder",
+    "image": "nutritionist-2.png"
+  },
+  {
+    "id": 3,
+    "name": "Gabriel Teixeira",
+    "role": "Nutrticionista Sênior",
+    "image": "nutritionist-3.png"
+  },
+  {
+    "id": 4,
+    "name": "Fabio Freitas",
+    "role": "Nutrticionista Sênior",
+    "image": "nutritionist-4.png"
+  },
+  {
+    "id": 5,
+    "name": "Helena Silva",
+    "role": "Nutrticionista Sênior",
+    "image": "nutritionist-5.png"
+  }
+]

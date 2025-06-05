@@ -23,11 +23,10 @@ const aboutData = [
   },
 ]
 
-
 export const About = () => {
 
   return (
-    <section id="about" className="relative">
+    <section id="about" className="relative overflow-hidden">
       <Leaf top={20} left={20}/>
       <Leaf bottom={20} right={20} className="rotate-180"/>
       <div className={containerStyle + ' flex justify-center items-center flex-col gap-4 z-10'}>
@@ -37,7 +36,8 @@ export const About = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {aboutData.map((item) => (
-            <div className="h-64 max-w-72 md:max-w-full flex flex-col justify-start items-center gap-3 text-center bg-white p-4 md:p-6 rounded-xl shadow-lg shadow-zinc-400 border hover:border-[var(--primary-color)]">
+            <div key={item.id}
+              className="h-64 max-w-72 md:max-w-full flex flex-col justify-start items-center gap-3 text-center bg-white p-4 md:p-6 rounded-xl shadow-lg shadow-zinc-400 border hover:border-[var(--primary-color)]">
               {item.icon}
               <p className="text-xl md:text-2xl font-bold">{item.title}</p>
               <p className="text-sm text-zinc-800">{item.description}</p>

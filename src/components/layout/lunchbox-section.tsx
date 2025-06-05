@@ -1,6 +1,6 @@
 "use client"
 import { LunchboxItem } from "@/components/lunchbox";
-import { lunchboxType } from "@/types/types";
+import { lunchboxType } from "@/types/lunchbox";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { buttonStyle, containerStyle, sectionDescStyle, sectionTitleStyle } from "@/utlis/styles";
@@ -30,7 +30,7 @@ export const LunchboxSection = () => {
         </div>
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           {lunchboxes && lunchboxes!.slice(0, 3).map(item => (
-            <LunchboxItem item={item} />
+            <LunchboxItem key={item.id} item={item} />
           ))}
         </div>
         <Button className={buttonStyle+' rounded-tl-4xl rounded-br-4xl px-8 py-6 text-lg font-semibold mx-auto'}>

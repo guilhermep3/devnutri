@@ -1,4 +1,4 @@
-import { lunchboxType } from "@/types/types";
+import { lunchboxType } from "@/types/lunchbox";
 import { Plus, Star } from "lucide-react";
 import Image from "next/image";
 
