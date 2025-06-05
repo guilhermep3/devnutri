@@ -5,4 +5,5 @@ export type lunchboxType = {
   ingredients: string[];
   type: string;
   price: number;
+  promotion?: number;
 }

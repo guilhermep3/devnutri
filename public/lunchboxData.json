@@ -13,11 +13,12 @@
          "Azeitona"
       ],
       "type": "Vegano",
-      "price": 18.90
+      "price": 19.50,
+      "promotion": 17.50
    },
    {
       "id": 2,
-      "name": "Arroz com salmão",
+      "name": "Salmão Vital",
       "image": "lunchbox-2.png",
       "ingredients": [
          "Arroz",
@@ -62,7 +63,8 @@
          "Cebola"
       ],
       "type": "Carnivoro",
-      "price": 27.90
+      "price": 27.90,
+      "promotion": 24.0
    },
    {
       "id": 5,
@@ -92,7 +94,69 @@
          "Limão",
          "Queijo fit"
       ],
+      "type": "Carnivoro",
+      "price": 22.90
+   },
+   {
+      "id": 7,
+      "name": "Frango Mix",
+      "image": "lunchbox-7.png",
+      "ingredients": [
+         "Frango",
+         "Alface",
+         "Couve",
+         "Batata",
+         "Ovo",
+         "Tomate",
+         "Pimentão",
+         "Limão"
+      ],
+      "type": "Carnivoro",
+      "price": 26.90,
+      "promotion": 22.50
+   },
+   {
+      "id": 8,
+      "name": "Abóbora e brócolis",
+      "image": "lunchbox-8.png",
+      "ingredients": [
+         "Grão de bico",
+         "Abóbora",
+         "Brócolis",
+         "Molho branco",
+         "Cogumelo"
+      ],
       "type": "Vegano",
+      "price": 21.20
+   },
+   {
+      "id": 9,
+      "name": "Salada Geral",
+      "image": "lunchbox-9.png",
+      "ingredients": [
+         "Frango",
+         "Ovo",
+         "Tomate",
+         "Cebola",
+         "Alface",
+         "Abacate",
+         "Queijo fit"
+      ],
+      "type": "Carnivoro",
+      "price": 24.90
+   },
+   {
+      "id": 10,
+      "name": "Macarrão do Campo",
+      "image": "lunchbox-10.png",
+      "ingredients": [
+         "Macarrão sem glúten",
+         "Abóbora",
+         "Frango",
+         "Ovo",
+         "Pimentão"
+      ],
+      "type": "Carnivoro",
       "price": 22.90
    }
 ]

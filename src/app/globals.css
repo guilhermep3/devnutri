@@ -1,15 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
-.sourGummy{
-  font-family: "Sour Gummy", sans-serif;
-}
 
 :root {
   --primary-color: #129b12;
@@ -132,7 +127,7 @@
 body {
   background-color: var(--background);
   color: #000000;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat";
 }
 
 .nutritionist-image-area::after{
@@ -158,4 +153,15 @@ body {
 .nutritionist:hover .nutritionist-image-area img{
   z-index: 10;
   transition-delay: 0.1s;
+}
+
+.lunchboxItem:hover .spinAnimation{
+  animation: spin 40s linear infinite;
+}@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }

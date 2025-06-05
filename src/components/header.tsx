@@ -10,9 +10,11 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-1/2 -translate-x-1/2 z-30 w-80 sm:w-96 flex justify-between items-center gap-6 bg-white px-6 py-4 shadow-md shadow-zinc-400 rounded-b-3xl">
-      <div className="text-[var(--secondary-color)] text-lg md:text-xl font-bold sourGummy">
+      <Link href={'/'}
+        className="text-[var(--secondary-color)] text-xl font-bold"
+      >
         DevNutri
-      </div>
+      </Link>
       <nav>
         <ul className="flex items-center gap-4">
           {linksData.map((link) => {
