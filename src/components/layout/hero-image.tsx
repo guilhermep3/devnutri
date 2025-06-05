@@ -12,7 +12,7 @@ const heroImages = [
 
 export const HeroImage = () => {
   const [translateDiv, setTranslateDiv] = useState(140);
-  const [currentImage, setCurrentImage] = useState('/hero/salad-plate.png');
+  const [currentImage, setCurrentImage] = useState('/salad-plate.png');
   const [secondaryImages, setSecondaryImages] = useState(
     heroImages.filter(img => img !== currentImage)
   );

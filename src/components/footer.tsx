@@ -39,9 +39,9 @@ export const Footer = () => {
           <p className="text-xl font-semibold">Ajuda</p>
           <ul>
             <li className="flex flex-col gap-2 md:gap-3">
-              <Link href={'/'} className="hover:underline">Privacidade</Link>
-              <Link href={'/'} className="hover:underline">Termos e Condições</Link>
-              <Link href={'/'} className="hover:underline">Politicas</Link>
+              <Link href={'/'} className="hover:underline w-fit">Privacidade</Link>
+              <Link href={'/'} className="hover:underline w-fit">Termos e Condições</Link>
+              <Link href={'/'} className="hover:underline w-fit">Politicas</Link>
             </li>
           </ul>
         </div>
@@ -50,7 +50,7 @@ export const Footer = () => {
           <ul className="flex flex-col gap-2 md:gap-3">
             <li>
               <Link href={'https://www.linkedin.com/in/guilherme-pereira3/'} target="_blank"
-                className={`flex items-center gap-2 text-white hover:underline`}
+                className={`flex items-center gap-2 text-white hover:underline w-fit`}
               >
                 <Instagram className={`size-5 md:size-6 text-white`}
                 />
@@ -59,7 +59,7 @@ export const Footer = () => {
             </li>
             <li>
               <Link href={'https://www.linkedin.com/in/guilherme-pereira3/'} target="_blank"
-                className={`flex items-center gap-2 text-white hover:underline`}
+                className={`flex items-center gap-2 text-white hover:underline w-fit`}
               >
                 <Facebook className={`size-5 md:size-6 text-white`}
                 />
@@ -68,7 +68,7 @@ export const Footer = () => {
             </li>
             <li>
               <Link href={'https://www.linkedin.com/in/guilherme-pereira3/'} target="_blank"
-                className={`flex items-center gap-2 text-white hover:underline`}
+                className={`flex items-center gap-2 text-white hover:underline w-fit`}
               >
                 <Linkedin className={`size-5 md:size-6 text-white`}
                 />
@@ -77,7 +77,7 @@ export const Footer = () => {
             </li>
             <li>
               <Link href={'https://github.com/guilhermep3'} target="_blank"
-                className={`flex items-center gap-2 text-white hover:underline`}
+                className={`flex items-center gap-2 text-white hover:underline w-fit`}
               >
                 <Github className={`size-5 md:size-6 text-white`}
                 />
