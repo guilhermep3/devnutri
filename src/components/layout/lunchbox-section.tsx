@@ -4,9 +4,15 @@ import { lunchboxType } from "@/types/lunchbox";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { buttonStyle, containerStyle, sectionDescStyle, sectionTitleStyle } from "@/utlis/styles";
+import { useRouter } from "next/navigation";
 
 export const LunchboxSection = () => {
   const [lunchboxes, setLunchboxes] = useState<lunchboxType[] | null>(null);
+  const router = useRouter();
+
+  function handleGoShop(){
+    router.push('/shop')
+  }
 
   useEffect(() => {
     const fetchLunchboxes = async () => {
@@ -20,7 +26,7 @@ export const LunchboxSection = () => {
 
   return (
     <section id="lunchboxes">
-      <div className={containerStyle+' flex flex-col  space-y-10'}>
+      <div className={containerStyle+' flex flex-col justify-center items-center space-y-10'}>
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className={sectionTitleStyle}>Nossas marmitas mais vendidas</h1>
           <p className={sectionDescStyle}>
@@ -33,7 +39,7 @@ export const LunchboxSection = () => {
             <LunchboxItem key={item.id} item={item} />
           ))}
         </div>
-        <Button className={buttonStyle+' mx-auto'}>
+        <Button onClick={handleGoShop} className={buttonStyle+' mx-auto  text-white'}>
           Comprar
         </Button>
       </div>

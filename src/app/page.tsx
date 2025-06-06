@@ -5,11 +5,11 @@ import { NutritionistSection } from "@/components/layout/nutritionist-section";
 
 export default function Home() {
   return (
-    <div className="">
+    <main className="">
       <Hero/>
       <About/>
       <LunchboxSection/>
       <NutritionistSection/>
-    </div>
+    </main>
   );
 }

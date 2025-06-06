@@ -1,23 +1,14 @@
 "use client"
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { HeaderShop } from "./header"
 import { lunchboxType } from "@/types/lunchbox";
 import { LunchboxItem } from "@/components/lunchbox";
 
-
-export const AllLunchboxes = () => {
-  const [lunchboxes, setLunchboxes] = useState<lunchboxType[] | null>(null);
+type props = {
+  lunchboxes: lunchboxType[];
+}
+export const AllLunchboxes = ({lunchboxes}: props) => {
   const [active, setActive] = useState('Todos');
-
-  useEffect(() => {
-    const fetchLunchboxes = async () => {
-      const res = await fetch('/lunchboxData.json');
-      const data = await res.json();
-      setLunchboxes(data);
-    };
-
-    fetchLunchboxes();
-  }, []);
 
   const filteredLunchboxes = lunchboxes?.filter((item) => {
     if(active === 'Todos') return true;

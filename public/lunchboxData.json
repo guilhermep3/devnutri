@@ -31,7 +31,8 @@
          "Semente de girassol"
       ],
       "type": "Carnivoro",
-      "price": 29.90
+      "price": 29.90,
+      "promotion": null
    },
    {
       "id": 3,
@@ -49,7 +50,8 @@
          "Molho de tomate"
       ],
       "type": "Carnivoro",
-      "price": 24.50
+      "price": 24.50,
+      "promotion": null
    },
    {
       "id": 4,
@@ -81,7 +83,8 @@
          "Queijo fit"
       ],
       "type": "Vegano",
-      "price": 19.90
+      "price": 19.90,
+      "promotion": null
    },
    {
       "id": 6,
@@ -95,7 +98,8 @@
          "Queijo fit"
       ],
       "type": "Carnivoro",
-      "price": 22.90
+      "price": 22.90,
+      "promotion": null
    },
    {
       "id": 7,
@@ -127,7 +131,8 @@
          "Cogumelo"
       ],
       "type": "Vegano",
-      "price": 21.20
+      "price": 21.20,
+      "promotion": null
    },
    {
       "id": 9,
@@ -143,7 +148,8 @@
          "Queijo fit"
       ],
       "type": "Carnivoro",
-      "price": 24.90
+      "price": 24.90,
+      "promotion": null
    },
    {
       "id": 10,
@@ -157,6 +163,7 @@
          "Pimentão"
       ],
       "type": "Carnivoro",
-      "price": 22.90
+      "price": 22.90,
+      "promotion": null
    }
 ]
