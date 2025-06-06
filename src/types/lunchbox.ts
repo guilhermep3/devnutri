@@ -6,4 +6,5 @@ export type lunchboxType = {
   type: string;
   price: number;
   promotion: number | null;
+  recommendation: string
 }

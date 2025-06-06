@@ -1,169 +1,163 @@
 [
-   {
-      "id": 1,
-      "name": "Salada com torrada",
-      "image": "lunchbox-1.png",
-      "ingredients": [
-         "Torrada",
-         "Ovo",
-         "Tomate",
-         "Milho",
-         "Repolho",
-         "Alface",
-         "Azeitona"
-      ],
-      "type": "Vegano",
-      "price": 19.50,
-      "promotion": 17.50
-   },
-   {
-      "id": 2,
-      "name": "Salmão Vital",
-      "image": "lunchbox-2.png",
-      "ingredients": [
-         "Arroz",
-         "Salmão",
-         "Queijo fit",
-         "Tomate",
-         "Pimentão",
-         "Picles",
-         "Azeitona",
-         "Semente de girassol"
-      ],
-      "type": "Carnivoro",
-      "price": 29.90,
-      "promotion": null
-   },
-   {
-      "id": 3,
-      "name": "Macarrão Fit",
-      "image": "lunchbox-3.png",
-      "ingredients": [
-         "Macarrão sem glúten",
-         "Grão de bico",
-         "Carne Moída",
-         "Milho",
-         "Ervilha",
-         "Abóbora",
-         "Azeitona",
-         "Alface",
-         "Molho de tomate"
-      ],
-      "type": "Carnivoro",
-      "price": 24.50,
-      "promotion": null
-   },
-   {
-      "id": 4,
-      "name": "Peixe e brócolis",
-      "image": "lunchbox-4.png",
-      "ingredients": [
-         "Peixe",
-         "Brócolis",
-         "Molho branco",
-         "Tomate",
-         "Cebola"
-      ],
-      "type": "Carnivoro",
-      "price": 27.90,
-      "promotion": 24.0
-   },
-   {
-      "id": 5,
-      "name": "Salada verde",
-      "image": "lunchbox-5.png",
-      "ingredients": [
-         "Alface",
-         "Rúcula",
-         "Brócolis",
-         "Tomate",
-         "Cebola",
-         "Pimentão",
-         "Pepino",
-         "Queijo fit"
-      ],
-      "type": "Vegano",
-      "price": 19.90,
-      "promotion": null
-   },
-   {
-      "id": 6,
-      "name": "Salada com Frango",
-      "image": "lunchbox-6.png",
-      "ingredients": [
-         "Frango",
-         "Alface",
-         "Rúcula",
-         "Limão",
-         "Queijo fit"
-      ],
-      "type": "Carnivoro",
-      "price": 22.90,
-      "promotion": null
-   },
-   {
-      "id": 7,
-      "name": "Frango Mix",
-      "image": "lunchbox-7.png",
-      "ingredients": [
-         "Frango",
-         "Alface",
-         "Couve",
-         "Batata",
-         "Ovo",
-         "Tomate",
-         "Pimentão",
-         "Limão"
-      ],
-      "type": "Carnivoro",
-      "price": 26.90,
-      "promotion": 22.50
-   },
-   {
-      "id": 8,
-      "name": "Abóbora e brócolis",
-      "image": "lunchbox-8.png",
-      "ingredients": [
-         "Grão de bico",
-         "Abóbora",
-         "Brócolis",
-         "Molho branco",
-         "Cogumelo"
-      ],
-      "type": "Vegano",
-      "price": 21.20,
-      "promotion": null
-   },
-   {
-      "id": 9,
-      "name": "Salada Geral",
-      "image": "lunchbox-9.png",
-      "ingredients": [
-         "Frango",
-         "Ovo",
-         "Tomate",
-         "Cebola",
-         "Alface",
-         "Abacate",
-         "Queijo fit"
-      ],
-      "type": "Carnivoro",
-      "price": 24.90,
-      "promotion": null
-   },
-   {
-      "id": 10,
-      "name": "Macarrão do Campo",
-      "image": "lunchbox-10.png",
-      "ingredients": [
-         "Macarrão sem glúten",
-         "Abóbora",
-         "Frango",
-         "Ovo",
-         "Pimentão"
-      ],
-      "type": "Carnivoro",
-      "price": 22.90,
-      "promotion": null
-   }
+  {
+    "id": 1,
+    "name": "Salada com torrada",
+    "image": "lunchbox-1.png",
+    "ingredients": [
+      "Torrada",
+      "Ovo",
+      "Tomate",
+      "Milho",
+      "Repolho",
+      "Alface",
+      "Azeitona"
+    ],
+    "type": "Vegano",
+    "price": 19.50,
+    "promotion": 17.50,
+    "recommendation": "Perfeito para quem busca um alimento leve com fibras e baixa caloria para a tarde."
+  },
+  {
+    "id": 2,
+    "name": "Salmão Vital",
+    "image": "lunchbox-2.png",
+    "ingredients": [
+      "Arroz",
+      "Salmão",
+      "Queijo fit",
+      "Tomate",
+      "Pimentão",
+      "Picles",
+      "Azeitona",
+      "Semente de girassol"
+    ],
+    "type": "Carnivoro",
+    "price": 29.90,
+    "promotion": null,
+    "recommendation": "Ideal para quem quer uma refeição rica em ômega-3 e proteínas de alta qualidade."
+  },
+  {
+    "id": 3,
+    "name": "Macarrão Fit",
+    "image": "lunchbox-3.png",
+    "ingredients": [
+      "Macarrão sem glúten",
+      "Grão de bico",
+      "Carne Moída",
+      "Milho",
+      "Ervilha",
+      "Abóbora",
+      "Azeitona",
+      "Alface",
+      "Molho de tomate"
+    ],
+    "type": "Carnivoro",
+    "price": 24.50,
+    "promotion": null,
+    "recommendation": "Uma opção saudável e balanceada para quem deseja energia e sabor ao mesmo tempo."
+  },
+  {
+    "id": 4,
+    "name": "Peixe e brócolis",
+    "image": "lunchbox-4.png",
+    "ingredients": [
+      "Peixe",
+      "Brócolis",
+      "Molho branco",
+      "Tomate",
+      "Cebola"
+    ],
+    "type": "Carnivoro",
+    "price": 27.90,
+    "promotion": 24.00,
+    "recommendation": "Recomendado para quem busca uma refeição leve e nutritiva, rica em proteínas e fibras."
+  },
+  {
+    "id": 5,
+    "name": "Salada verde",
+    "image": "lunchbox-5.png",
+    "ingredients": [
+      "Alface",
+      "Rúcula",
+      "Brócolis",
+      "Tomate",
+      "Cebola",
+      "Pimentão",
+      "Pepino",
+      "Queijo fit"
+    ],
+    "type": "Vegano",
+    "price": 19.90,
+    "promotion": null,
+    "recommendation": "Excelente escolha para uma refeição fresca, leve e cheia de nutrientes naturais."
+  },
+  {
+    "id": 6,
+    "name": "Salada com Frango",
+    "image": "lunchbox-6.png",
+    "ingredients": [
+      "Frango",
+      "Alface",
+      "Rúcula",
+      "Limão",
+      "Queijo fit"
+    ],
+    "type": "Carnivoro",
+    "price": 22.90,
+    "promotion": null,
+    "recommendation": "Perfeita para quem quer manter a dieta com uma salada reforçada com proteína magra."
+  },
+  {
+    "id": 7,
+    "name": "Frango Mix",
+    "image": "lunchbox-7.png",
+    "ingredients": [
+      "Frango",
+      "Alface",
+      "Couve",
+      "Batata",
+      "Ovo",
+      "Tomate",
+      "Pimentão",
+      "Limão"
+    ],
+    "type": "Carnivoro",
+    "price": 26.90,
+    "promotion": 22.50,
+    "recommendation": "Refeição completa e energética, ideal para quem precisa de disposição ao longo do dia."
+  },
+  {
+    "id": 8,
+    "name": "Abóbora e brócolis",
+    "image": "lunchbox-8.png",
+    "ingredients": [
+      "Grão de bico",
+      "Abóbora",
+      "Brócolis",
+      "Molho branco",
+      "Cogumelo"
+    ],
+    "type": "Vegano",
+    "price": 21.20,
+    "promotion": null,
+    "recommendation": "Indicado para quem busca sabores suaves, nutrientes e uma refeição vegetariana leve."
+  },
+  {
+    "id": 9,
+    "name": "Salada Geral",
+    "image": "lunchbox-9.png",
+    "ingredients": [
+      "Frango",
+      "Ovo",
+      "Tomate",
+      "Cebola",
+      "Alface",
+      "Abacate",
+      "Queijo fit"
+    ],
+    "type": "Carnivoro",
+    "price": 24.90,
+    "promotion": null,
+    "recommendation": "Ótima escolha para quem busca uma refeição variada, rica em proteína e gorduras boas."
+  }
 ]

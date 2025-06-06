@@ -67,6 +67,9 @@ const Page = () => {
               ))}
             </ul>
           </div>
+          <div className="flex flex-col gap-4">
+            <p className="text-sm md:text-base">{lunchbox?.recommendation}</p>
+          </div>
           <div className="flex justify-between mt-auto">
             <div className="flex items-end">
               <p className="text-lg font-bold">R$ <span className="text-xl md:text-2xl">{lunchbox?.price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span></p>
