@@ -1,4 +1,5 @@
 "use client"
+import { useCartStore } from "@/store/cart-store";
 import { linksData } from "@/utlis/linksData";
 import { ShoppingCart } from "lucide-react";
 import Link from "next/link";
@@ -6,6 +7,7 @@ import { usePathname } from "next/navigation"
 
 export const Header = () => {
   const pathname = usePathname();
+  const { cart } = useCartStore();
 
   const isActive = (path: string) => {
     if (path === '/shop') {
@@ -43,6 +45,7 @@ export const Header = () => {
         </ul>
       </nav>
       <div className="relative group p-3 rounded-full hover:bg-zinc-200 inline-block transition">
+        {cart.length > 0 && <div className="absolute top-1 right-1 w-3 h-3 bg-red-500 rounded-full"></div>}
         <ShoppingCart className="size-5 md:size-6 cursor-pointer" />
         <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-sm text-zinc-800 bg-white p-1 rounded-md border opacity-0 group-hover:opacity-100 transition pointer-events-none">
           Carrinho
