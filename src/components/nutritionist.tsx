@@ -24,7 +24,7 @@ export const Nutritionist = ({ item }: props) => {
       <p className="text-xl md:text-2xl font-bold text-center text-green-950 mt-2 group-hover:text-[var(--secondary-color)] transition duration-500">
         Dr. {item.name}
       </p>
-      <p className="text-zinc-800 text-center">{item.role}</p>
+      <p className="text-zinc-800 text-center">{item.specialty}</p>
     </div>
   )
 }

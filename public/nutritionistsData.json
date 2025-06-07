@@ -2,31 +2,31 @@
   {
     "id": 1,
     "name": "Nicole Gonçalves",
-    "role": "Nutrticionista Líder",
+    "specialty": "Esportiva",
     "image": "nutritionist-1.png"
   },
   {
     "id": 2,
     "name": "Mariana Andrade",
-    "role": "Nutrticionista Líder",
+    "specialty": "Obesidade",
     "image": "nutritionist-2.png"
   },
   {
     "id": 3,
     "name": "Gabriel Teixeira",
-    "role": "Nutrticionista Sênior",
+    "specialty": "Emagrecimento",
     "image": "nutritionist-3.png"
   },
   {
     "id": 4,
     "name": "Fabio Freitas",
-    "role": "Nutrticionista Sênior",
+    "specialty": "Reeducação",
     "image": "nutritionist-4.png"
   },
   {
     "id": 5,
     "name": "Helena Silva",
-    "role": "Nutrticionista Sênior",
+    "specialty": "Infantil",
     "image": "nutritionist-5.png"
   }
 ]

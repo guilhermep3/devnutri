@@ -119,7 +119,7 @@ export const StepAddress = ({ setStep }: props) => {
                 <FormLabel>Estado</FormLabel>
                 <FormControl>
                   <Select defaultValue={field.value} onValueChange={field.onChange}>
-                    <SelectTrigger>
+                    <SelectTrigger className="border-zinc-400 focus:border-[var(--primary-color)]">
                       <SelectValue placeholder="Estado" />
                     </SelectTrigger>
                     <SelectContent>

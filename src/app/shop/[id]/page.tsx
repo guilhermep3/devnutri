@@ -1,5 +1,4 @@
 "use client"
-import { CartModal } from "@/components/cart-modal";
 import { ShopIdTop } from "@/components/layout/shop/id/shop-id-top";
 import { ShopIdPrice } from "@/components/layout/shop/id/sjop-id-price";
 import { Button } from "@/components/ui/button";
@@ -17,7 +16,7 @@ const Page = () => {
   const params = useParams()
   const rawId = params.id;
   const id = Array.isArray(rawId) ? Number(rawId[0]) : Number(rawId);
-  const { isModalOpen, updateCart } = useCartStore();
+  const { updateCart } = useCartStore();
 
   useEffect(() => {
     async function fetchLunchbox() {
