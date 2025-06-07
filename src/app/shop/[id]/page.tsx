@@ -38,9 +38,9 @@ const Page = () => {
   };
 
   return (
-    <main className="mt-2 md:mt-10">
+    <main className="relative mt-2 md:mt-10">
       <div className={containerStyle + ' flex flex-col md:flex-row rounded-3xl overflow-hidden max-w-5xl'}>
-        <ShopIdTop lunchbox={lunchbox!}/>
+        <ShopIdTop lunchbox={lunchbox!} />
         <div className="flex-1 flex flex-col gap-6 bg-white rounded-b-3xl px-4 py-8">
           <div className="flex items-center">
             <h1 className="text-xl md:text-3xl font-bold w-full">{lunchbox?.name}</h1>
@@ -52,8 +52,8 @@ const Page = () => {
           <div className="flex flex-col gap-4">
             <p className="text-base md:text-lg">Ingredientes:</p>
             <ul className="flex flex-wrap gap-2">
-              {lunchbox?.ingredients.map((i) => (
-                <li className="text-xs md:text-sm px-2 py-1 bg-zinc-200 rounded-sm">{i}</li>
+              {lunchbox?.ingredients.map((i, index) => (
+                <li key={index} className="text-xs md:text-sm px-2 py-1 bg-zinc-200 rounded-sm">{i}</li>
               ))}
             </ul>
           </div>
@@ -71,7 +71,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <CartModal/>
     </main>
   )
 }

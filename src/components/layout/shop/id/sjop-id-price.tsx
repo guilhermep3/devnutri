@@ -1,10 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { useCartStore } from "@/store/cart-store"
 import { lunchboxType } from "@/types/lunchbox"
-import { ArrowLeft, Minus, Plus } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import { Suspense } from "react"
+import { Minus, Plus } from "lucide-react"
 
 type props = {
   lunchbox: lunchboxType;
@@ -12,7 +8,6 @@ type props = {
   setQuantity: (newValue: number) => void;
 }
 export const ShopIdPrice = ({ lunchbox, quantity, setQuantity }: props) => {
-  const { } = useCartStore();
 
   function handleUpdateQuantity(update: number) {
     const newQuantity = quantity + update;

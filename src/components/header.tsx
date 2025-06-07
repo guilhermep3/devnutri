@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 
 export const Header = () => {
   const pathname = usePathname();
-  const { cart } = useCartStore();
+  const { cart, setIsModalOpen } = useCartStore();
 
   const isActive = (path: string) => {
     if (path === '/shop') {
@@ -16,12 +16,16 @@ export const Header = () => {
     return pathname === path;
   };
 
+  function handleOverlayClick() {
+    setIsModalOpen(true);
+  };
+
   return (
     <header className="fixed top-0 left-1/2 -translate-x-1/2 z-30 w-80 sm:w-96 flex justify-between items-center gap-6 bg-white px-4 md:px-6 py-2 shadow-md shadow-zinc-400 rounded-b-3xl">
       <Link href={'/'}
         className="text-[var(--secondary-color)] text-xl font-bold w-10"
       >
-        <img src={'/logo.png'} style={{width: "inherit"}} />
+        <img src={'/logo.png'} style={{ width: "inherit" }} />
       </Link>
       <nav className="border-x-2 px-2">
         <ul className="flex justify-center items-center gap-1">
@@ -44,10 +48,17 @@ export const Header = () => {
           })}
         </ul>
       </nav>
-      <div className="relative group p-3 rounded-full hover:bg-zinc-200 inline-block transition">
-        {cart.length > 0 && <div className="absolute top-1 right-1 w-3 h-3 bg-red-500 rounded-full"></div>}
+      <div className="relative group p-3 rounded-full hover:bg-zinc-200 inline-block transition"
+        onClick={handleOverlayClick}
+      >
+        {cart.length > 0 &&
+          <div className="absolute top-0 right-0 w-5 h-5 bg-red-500 text-white flex justify-center items-center text-sm rounded-full">
+            {cart.length}
+          </div>
+        }
         <ShoppingCart className="size-5 md:size-6 cursor-pointer" />
-        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-sm text-zinc-800 bg-white p-1 rounded-md border opacity-0 group-hover:opacity-100 transition pointer-events-none">
+        <div
+          className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-sm text-zinc-800 bg-white p-1 rounded-md border opacity-0 group-hover:opacity-100 transition pointer-events-none">
           Carrinho
         </div>
       </div>

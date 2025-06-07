@@ -17,7 +17,7 @@ export const LunchboxItem = ({ item }: props) => {
       className="relative group flex flex-col justify-center items-center bg-white p-4 rounded-xl cursor-pointer shadow-lg shadow-zinc-400 border hover:border-zinc-400 transition"
     >
       {item.promotion &&
-        <div className="absolute top-2 md:top-4 left-2 md:left-4 z-30 bg-red-600 font-semibold text-sm text-white px-2 py-1 rounded-md">
+        <div className="absolute top-2 md:top-4 left-2 md:left-4 z-20 bg-red-600 font-semibold text-sm text-white px-2 py-1 rounded-md">
           {percentageDiscount!.toFixed(2)}%
         </div>
       }
@@ -36,8 +36,8 @@ export const LunchboxItem = ({ item }: props) => {
       </div>
       <p className="text-lg md:text-xl font-bold text-center my-2">{item.name}</p>
       <p className="flex mb-3">
-        {Array.from({length: 5}).map((_, id) => (
-          <Star className="size-4 md:size-5 fill-yellow-500 stroke-yellow-700" />
+        {Array.from({length: 5}).map((_, index) => (
+          <Star key={index} className="size-4 md:size-5 fill-yellow-500 stroke-yellow-700" />
         ))}
       </p>
       <div className="flex justify-between items-center w-full mt-auto">
