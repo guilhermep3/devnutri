@@ -5,9 +5,12 @@ import Image from "next/image";
 import { ShopIdItem } from "./layout/shop/id/shop-id-item";
 import { Button } from "./ui/button";
 import { buttonStyle } from "@/utlis/styles";
+import { CheckoutDialog } from "./checkout/checkout-dialog";
+import { useState } from "react";
 
 export const CartModal = () => {
   const { cart, isModalOpen, setIsModalOpen } = useCartStore();
+  const [checkoutOpen, setCheckoutOpen] = useState<boolean>(false);
 
   function handleOverlayClick() {
     setIsModalOpen(false);
@@ -22,10 +25,10 @@ export const CartModal = () => {
   }
 
   return (
-    <div className={`fixed inset-0 bg-black/50 z-40 transtion duration-300
+    <div className={`fixed inset-0 z-40 ${isModalOpen ? 'pointer-events-auto visible' : 'pointer-events-none invisible'}`}>
+      <div className={`fixed inset-0 bg-black/50 transtion duration-300
         ${isModalOpen ? 'opacity-100 pointer-events-auto visible' : 'opacity-0 pointer-events-none invisible'}`}
-      onClick={handleOverlayClick}
-    >
+        onClick={handleOverlayClick}></div>
       <div
         className={`fixed p-4 md:p-8 bg-zinc-100 bottom-0 right-0 w-full md:h-full md:w-[400px] h-3/4
         flex flex-col transition duration-300
@@ -52,13 +55,18 @@ export const CartModal = () => {
         </div>
         <Separator orientation="horizontal" className="my-4" />
         <div>
-          <Button className={`${buttonStyle}
-            ${cart.length > 0 ? 'opacity-100 pointer-events-auto' : 'opacity-50 cursor-not-allowed hover:bg-[var(--primary-color)]'} w-full`}
+          <Button className={`${buttonStyle} opacity-100 pointer-events-auto w-full`}
+            disabled={cart.length === 0}
+            onClick={() => setCheckoutOpen(true)}
           >
-            Adicionar
+            Comprar
           </Button>
         </div>
       </div>
+      <CheckoutDialog
+        open={checkoutOpen}
+        onOpenChange={setCheckoutOpen}
+      />
     </div>
   )
 }
