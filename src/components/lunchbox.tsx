@@ -13,7 +13,7 @@ export const LunchboxItem = ({ item }: props) => {
 
   return (
     <Link href={`/shop/${item.id}`}
-      key={item.id}
+      key={item.id} data-aos="zoom-in"
       className="relative group flex flex-col justify-center items-center bg-white p-4 rounded-xl cursor-pointer shadow-lg shadow-zinc-400 border hover:border-zinc-400 transition"
     >
       {item.promotion &&

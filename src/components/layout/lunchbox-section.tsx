@@ -30,8 +30,8 @@ export const LunchboxSection = () => {
       <Leaf bottom={20} left={20} />
       <div className={containerStyle + ' flex flex-col justify-center items-center space-y-10'}>
         <div className="flex flex-col justify-center items-center text-center">
-          <h1 className={sectionTitleStyle}>Nossas marmitas mais vendidas</h1>
-          <p className={sectionDescStyle}>
+          <h1 data-aos="fade-down" className={sectionTitleStyle}>Nossas marmitas mais vendidas</h1>
+          <p data-aos="zoom-in" className={sectionDescStyle}>
             Cuide da sua alimentação de forma prática e inteligente, elevando sua produtividade no dia a dia.
             Com nossas marmitas saudáveis, saborosas e preparadas com carinho
           </p>
@@ -41,7 +41,10 @@ export const LunchboxSection = () => {
             <LunchboxItem key={item.id} item={item} />
           ))}
         </div>
-        <Button onClick={handleGoShop} className={buttonStyle + ' mx-auto  text-white'}>
+        <Button onClick={handleGoShop}
+          className={buttonStyle + ' mx-auto  text-white'}
+          data-aos="zoom-in"
+        >
           Comprar
         </Button>
       </div>

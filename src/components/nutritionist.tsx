@@ -9,8 +9,8 @@ type props = {
 }
 export const Nutritionist = ({ item, setNutriDialog, setIsOpen, showBtn }: props) => {
 
-  function handleClicked(){
-    if(!setNutriDialog || !setIsOpen) return;
+  function handleClicked() {
+    if (!setNutriDialog || !setIsOpen) return;
     setNutriDialog(item);
     setIsOpen(true);
   }
@@ -19,6 +19,7 @@ export const Nutritionist = ({ item, setNutriDialog, setIsOpen, showBtn }: props
     <div
       className="nutritionist group flex justify-center items-center flex-col pb-10 w-fit mx-auto"
       onClick={handleClicked}
+      data-aos="zoom-in"
     >
       <div className="nutritionist-image-area relative flex justify-center w-72 bg-zinc-300 rounded-3xl overflow-hidden">
         <img src={`/nutri/${item.image}`} alt={"imagem do " + item.name}

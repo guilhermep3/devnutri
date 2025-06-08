@@ -16,7 +16,7 @@ const Page = () => {
       </div>
       <section>
         <div className={containerStyle}>
-          <h1 className={'text-xl md:text-2xl font-bold text-center'}>Todos nossos nutricionistas</h1>
+          <h1 className={'text-xl md:text-2xl font-bold text-center mb-10'}>Todos nossos nutricionistas</h1>
           <NutritionistsList/>
         </div>
       </section>

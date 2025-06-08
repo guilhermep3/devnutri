@@ -7,5 +7,5 @@ type scheduleStore = {
 
 export const useScheduleStore = create<scheduleStore>((set) => ({
   schedule: null,
-  setSchedule: (newDate) => set({schedule: newDate})
+  setSchedule: (newDate) => set({ schedule: newDate })
 }));

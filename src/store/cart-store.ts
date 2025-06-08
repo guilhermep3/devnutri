@@ -23,13 +23,13 @@ export const useCartStore = create<cartStore>((set) => ({
     }
 
     newCart[lunchboxIndex].quantity += quantity;
-    
+
     if (newCart[lunchboxIndex].quantity <= 0) {
       newCart = newCart.filter((i) => i.lunchbox.id !== lunchbox.id)
     }
-    
+
     console.log("newCart: ", newCart)
     return { cart: newCart };
   }),
-  setIsModalOpen: (newValue: boolean) => set({isModalOpen: newValue})
+  setIsModalOpen: (newValue: boolean) => set({ isModalOpen: newValue })
 }))
