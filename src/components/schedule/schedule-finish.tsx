@@ -19,7 +19,7 @@ export const ScheduleFinish = ({nutritionist, setStep, setIsOpen}: props) => {
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="text-lg font-bold">Consulta marcada com {nutriFirstName}</p>
-      <p>Esperamos você na nossa clínica no dia {schedule && `${schedule.getDate()} de ${new Intl.DateTimeFormat('pt-BR', { month: 'long' }).format(schedule)}`}</p>
+      <p className="text-center">Esperamos você na nossa clínica no dia {schedule && `${schedule.getDate()} de ${new Intl.DateTimeFormat('pt-BR', { month: 'long' }).format(schedule)}`}</p>
       <Button className="bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] cursor-pointer mt-6"
         onClick={handleClose}
       >Fechar</Button>

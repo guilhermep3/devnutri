@@ -49,7 +49,7 @@ export const CartModal = () => {
           ))}
         </div>
         <Separator orientation="horizontal" className="my-4" />
-        <div className="flex gap-4 text-lg font-bold">
+        <div className={`flex gap-4 text-lg font-bold ${cart.length === 0 ? 'text-black/50' : 'text-black'}`}>
           <p>Total:</p>
           <p>R${subtotal.toFixed(2)}</p>
         </div>

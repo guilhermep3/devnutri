@@ -71,7 +71,7 @@ export const ScheduleDate = ({ nutritionist, nutriSpeciality, setStep }: props) 
                     {...field}
                     min={formatDate(today)}
                     max={formatDate(maxDate)}
-                    className="cursor-pointer"
+                    className="cursor-pointer text-black"
                   />
                 </FormControl>
                 <FormMessage className="text-xs sm:text-sm">

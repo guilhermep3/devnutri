@@ -13,7 +13,7 @@ export const Hero = () => {
           <p data-aos="fade-down" className="text-lg sm:text-xl font-semibold">Cuide de você e viva melhor, compre nossas marmitas fitness e agende uma consulta com nossos nutricionistas.</p>
           <Button data-aos="fade-up" className={buttonStyle}>Comprar</Button>
         </div>
-        <div data-aos="zoom-in" className="sm:flex-1 flex flex-col justify-center items-center">
+        <div data-aos="zoom-in" className="flex-1 sm:flex-1 flex flex-col justify-center items-center">
           <HeroImage />
         </div>
       </div>

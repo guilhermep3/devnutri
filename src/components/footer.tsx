@@ -8,20 +8,19 @@ export const Footer = () => {
   const pathname = usePathname();
 
   const isActive = (path: string) => pathname === path;
-  // bg-white 
   return (
     <footer className="bg-[var(--secondary-color)] text-white py-10 px-4 md:px-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col gap-4">
-          <p className="text-xl font-semibold">Links</p>
+          <p className="text-2xl font-semibold">Links</p>
           <ul className="flex flex-col gap-2 md:gap-3">
             {linksData.map((link) => {
               const Icon = link.icon;
               return (
                 <li key={link.id}>
                   <Link href={link.href}
-                    className={`flex items-center gap-2 hover:underline
-                      ${isActive(link.href) ? 'text-white' : 'text-white/60'}`}
+                    className={`flex items-center gap-2 hover:underline text-white
+                      ${isActive(link.href) ? 'font-bold' : ''}`}
                   >
                     <Icon className={`size-5 md:size-6 ${isActive(link.href)
                       ? 'text-white'
@@ -36,7 +35,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-4">
-          <p className="text-xl font-semibold">Ajuda</p>
+          <p className="text-2xl font-semibold">Ajuda</p>
           <ul>
             <li className="flex flex-col gap-2 md:gap-3">
               <Link href={'/'} className="hover:underline w-fit">Privacidade</Link>
@@ -46,7 +45,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-4">
-          <p className="text-xl font-semibold">Contatos</p>
+          <p className="text-2xl font-semibold">Contatos</p>
           <ul className="flex flex-col gap-2 md:gap-3">
             <li>
               <Link href={'https://www.linkedin.com/in/guilherme-pereira3/'} target="_blank"
@@ -89,7 +88,7 @@ export const Footer = () => {
       </div>
       <div className="mt-10">
         <p className="text-center text-sm">
-          Desenvolvido por 
+          Desenvolvido por
           <Link href={'https://www.linkedin.com/in/guilherme-pereira3/'} target="_blank" className="hover:underline ml-1">Guilherme Pereira</Link>
         </p>
       </div>
