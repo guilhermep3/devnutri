@@ -5,7 +5,7 @@ import { NutritionistSection } from "@/components/layout/nutritionist-section";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Hero/>
       <About/>
       <LunchboxSection/>

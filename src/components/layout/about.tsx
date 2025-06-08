@@ -32,7 +32,10 @@ export const About = () => {
       <div className={containerStyle + ' flex justify-center items-center flex-col gap-4 z-10'}>
         <div className="flex justify-center items-center flex-col">
           <h1 className={sectionTitleStyle + ' text-center'}>Porque somos os melhores</h1>
-          <p className={sectionDescStyle}>Sabemos que escolher a alimentação certa é fundamental. É por isso que nos destacamos principalmente nos três itens abaixo</p>
+          <p className={sectionDescStyle+' text-center'}>
+            Sabemos que escolher a alimentação certa é fundamental. 
+            É por isso que cuidamos principalmente dos três itens abaixo
+          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {aboutData.map((item) => (

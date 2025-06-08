@@ -49,7 +49,7 @@ export const StepUser = ({ setStep }: props) => {
             </FormItem>
           )}
         />
-        <Button type="submit" className={bgColor+' w-full cursor-pointer'}>Próximo</Button>
+        <Button type="submit" className={bgColor + ' w-full cursor-pointer'}>Próximo</Button>
       </form>
     </Form>
   )

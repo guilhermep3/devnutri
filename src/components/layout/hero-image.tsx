@@ -37,7 +37,7 @@ export const HeroImage = () => {
   }, []);
 
   function updateImage(imgClicked: string) {
-    const newSecondaries = secondaryImages.map((img) => 
+    const newSecondaries = secondaryImages.map((img) =>
       img === imgClicked ? currentImage : img
     )
     setSecondaryImages(newSecondaries);

@@ -137,7 +137,7 @@ export const StepAddress = ({ setStep }: props) => {
         </div>
         <div className="flex justify-between mt-4">
           <Button variant={'link'} onClick={() => setStep('user')} className="cursor-pointer">Voltar</Button>
-          <Button type="submit" className={bgColor+' cursor-pointer'}>Concluir</Button>
+          <Button type="submit" className={bgColor + ' cursor-pointer'}>Concluir</Button>
         </div>
       </form>
     </Form>
