@@ -6,6 +6,7 @@ export const Hero = () => {
 
   return (
     <section id="hero" className="relative w-full h-screen bg-[url('/hero-bg.jpg')] bg-cover bg-left sm:bg-center">
+      <div className="absolute inset-0 bg-white/30 md:bg-white/10 z-0"></div>
       <div className={containerStyle + ' flex justify-center items-center flex-col md:flex-row md:gap-4 z-10 pb-10 sm:pb-20'}>
         <div className="flex-1 flex flex-col gap-4 justify-end items-center md:items-start text-center md:text-start">
           <h1 data-aos="fade-down" className="text-4xl sm:text-5xl lg:text-7xl font-extrabold">Coma Bem, Viva Melhor.</h1>

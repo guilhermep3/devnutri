@@ -44,8 +44,8 @@ const Page = () => {
           <div className="flex items-center">
             <h1 className="text-xl md:text-3xl font-bold w-full">{lunchbox?.name}</h1>
             <div className="flex items-center gap-1">
-              <Star className="size-4 md:size-6 fill-yellow-500 stroke-yellow-600" />
-              <p className="md:text-lg font-semibold">5.0</p>
+              <Star className="size-6 md:size-8 fill-yellow-500 stroke-yellow-600" />
+              <p className="text-lg md:text-xl font-semibold">5.0</p>
             </div>
           </div>
           <div className="flex flex-col gap-4">

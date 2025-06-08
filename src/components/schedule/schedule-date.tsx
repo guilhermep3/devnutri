@@ -45,7 +45,7 @@ export const ScheduleDate = ({ nutritionist, nutriSpeciality, setStep }: props) 
   return (
     <div className="space-y-6">
       <div className="flex">
-        <div className="w-20 h-20 bg-zinc-400 p-1 pb-0 rounded-md">
+        <div className="w-20 h-20 bg-zinc-400 rounded-md">
           <Image
             src={`/nutri/${nutritionist.image}`}
             alt={nutritionist.name}

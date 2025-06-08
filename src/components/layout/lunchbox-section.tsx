@@ -36,7 +36,7 @@ export const LunchboxSection = () => {
             Com nossas marmitas saudáveis, saborosas e preparadas com carinho
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {lunchboxes && lunchboxes!.slice(0, 3).map(item => (
             <LunchboxItem key={item.id} item={item} />
           ))}

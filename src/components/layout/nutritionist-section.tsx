@@ -13,7 +13,7 @@ export const NutritionistSection = () => {
   }
 
   return (
-    <section id="nutritionist" className="relative">
+    <section id="nutritionist" className="relative overflow-hidden">
       <Leaf top={20} right={20} className="rotate-180" />
       <div className={containerStyle + ' flex flex-col justify-center items-center gap-10'}>
         <div className="text-center">
