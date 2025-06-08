@@ -81,7 +81,7 @@ export const ScheduleDate = ({ nutritionist, nutriSpeciality, setStep }: props) 
           />
           <Button type="submit"
             className={buttonStyleNoRound + ' w-full mt-4'}
-          >Marcar</Button>
+          >Agendar</Button>
         </form>
       </Form>
     </div>

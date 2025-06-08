@@ -1,41 +1,42 @@
-<<<<<<< HEAD
-=======
-projeto em desenvolvimento
+# DevNutri - Plataforma para Nutricionistas
 
->>>>>>> main
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+DevNutri é um projeto completo que combina uma landing page com funcionalidades de e-commerce, desenvolvido com React e Next.js. A aplicação é multi-página, conta com gerenciamento de estado via Zustand, design moderno, responsivo e otimizado para boa experiência do usuário.
 
-## Getting Started
+## Páginas do projeto
 
-First, run the development server:
+- **Início**: Apresentação dos produtos e profissionais nutricionistas.
+- **Shop**: E-commerce para compra de marmitas saudáveis.
+- **Nutricionistas**: Página para agendamento de consultas.
+- **Shop/id**: Exibição de uma marmita específica com mais informações.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologias utilizadas
+- **Next.js**: Framework React para SSR e melhor performance.
+- **aos**: Animações ao rolar a página.
+- **swiper**: Carrosséis e sliders interativos.
+- **react-hook-form + zod**: Manipulação e validação de formulários.
+- **zustand**: Gerenciamento de estado simples e leve.
+- **shadCn**: Componentes de UI modernos e acessíveis.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como Executar o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para executar o projeto localmente, siga os passos abaixo:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone o repositório:**
 
-## Learn More
+  ```bash
+  git clone https://github.com/guilhermep3/dentista-website.git
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Instale as dependências**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  ```bash
+  npm install ou yarn install
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Execute o projeto**
 
-## Deploy on Vercel
+  ```bash
+  npm run dev ou yarn dev
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p>Projeto desenvolvido por <a href="https://github.com/guilhermep3" target="_blank">Guilherme Pereira</a></p>
